@@ -1,4 +1,4 @@
-node('windows') {
+node{
   	def pscmd = { String cmd ->
   		"powershell -NoProfile -ExecutionPolicy Bypass -Command \"${cmd}\""
   	}
