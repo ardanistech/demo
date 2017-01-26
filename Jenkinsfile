@@ -9,7 +9,7 @@ node{
     {
       stage('Building it')
       {
-        dotnet publish --output published-app --configuration Release
+        bat "dotnet publish --output published-app --configuration Release"
       }
     }
 }
