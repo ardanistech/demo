@@ -10,7 +10,6 @@ node{
     {
       stage('Building it')
       {
-        bat "git clean -dfx"
         bat "dotnet restore"
         bat "dotnet publish --output published-app --configuration Release"
         bat env.OCTOPUS_EXE + " pack --id Ardanis.Demo --version 1.0.0 --basePath published-app --overwrite"
