@@ -4,7 +4,7 @@ node{
     def projectName = "Ardanis.Demo"
     def version = "1.0.$BUILD_NUMBER"
     def packageName = "${projectName}.${version}.nupkg"
-    def octopusProject = "Demo"
+    def octopusProject = "DTS2017-Demo"
 
   	def pscmd = { String cmd ->
   		"powershell -NoProfile -ExecutionPolicy Bypass -Command \"${cmd}\""
