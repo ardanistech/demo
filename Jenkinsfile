@@ -6,10 +6,6 @@ node{
     def packageName = "${projectName}.${version}.nupkg"
     def octopusProject = "DTS2017-Demo"
 
-  	def pscmd = { String cmd ->
-  		"powershell -NoProfile -ExecutionPolicy Bypass -Command \"${cmd}\""
-  	}
-
     dir(projPath)
     {
       stage('Building it')
